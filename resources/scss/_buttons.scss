@@ -1,0 +1,7 @@
+/* Mixins for buttons style */
+@mixin btn-style {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    font-weight: 700;
+}

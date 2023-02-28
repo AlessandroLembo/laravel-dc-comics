@@ -1,0 +1,63 @@
+.top-header{
+    background-color: $primary;
+    height: 30px;
+}
+
+.main-header{
+    background-color: $white;
+    height: 150px;
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+nav{
+    height: $h100;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $h100;
+
+    li{
+        height: $h100;
+        @include vertical_algnm;
+
+        &.active {
+            border-bottom: 4px solid $primary;
+            padding-top: 4px;
+        }
+
+
+        a{
+            color: black;
+            font-size: 20px;
+            padding: 10px;
+    
+            &.active {
+                color: $primary;
+            }
+
+            &:hover{
+                background-color: lightblue;
+            }
+        }
+    }
+
+}
+
+#search{
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-bottom: 4px solid $primary;
+    text-align: right;
+    background-color: whitesmoke;
+}
+
+
