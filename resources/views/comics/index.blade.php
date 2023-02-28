@@ -1,4 +1,4 @@
-{{-- @extends('layouts.main')
+@extends('layouts.main')
 
 @section('title', 'Comics')
 
@@ -6,4 +6,4 @@
 <div>
    <h1>SIAMO IN COMICS</h1>
 </div>   
-@endsection --}}
+@endsection

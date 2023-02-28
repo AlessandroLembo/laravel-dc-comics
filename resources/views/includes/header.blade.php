@@ -18,6 +18,9 @@
                   <li>
                     <a class="@if(Route::is('home')) active @endif" href="{{url('/')}}">Home</a>
                   </li>
+                  <li>
+                    <a class="@if(Route::is('comics.index')) active @endif" href="{{route('comics.index')}}">Comics</a>
+                  </li>
                 </ul>
             </nav>
             <div>
