@@ -15,10 +15,9 @@
             </figure>
             <nav>
                 <ul class="menu">
-                    {{-- @foreach ($menu_links as $link)
-                        <li><a href="{{route($link['route_name'])}}">{{$link['link']}}</a></li>
-                    @endforeach --}}
-              
+                  <li>
+                    <a class="@if(Route::is('home')) active @endif" href="{{url('/')}}">Home</a>
+                  </li>
                 </ul>
             </nav>
             <div>
