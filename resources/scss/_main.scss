@@ -36,12 +36,14 @@
 }
 
 #content-top {
-    background-color: rgba(0, 0, 0, 0.6);
+    // background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgb(32,32,32);
+
     min-height: 400px;
     padding: 1rem 0;
+    position: relative;
 
     .cards-section {
-        position: relative;
 
         #current-series {
             @include btn-style;
@@ -92,6 +94,16 @@
     img{
         width: 100%;
         height: 200px;
+    }
+}
+
+.no-comics{
+    @include vertical_algnm;
+    justify-content: center;
+
+    h1{
+        font-size: 40px;
+        color: darkred;
     }
 }
 
