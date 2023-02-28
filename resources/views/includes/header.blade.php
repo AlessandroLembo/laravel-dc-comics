@@ -15,9 +15,9 @@
             </figure>
             <nav>
                 <ul class="menu">
-                    @foreach ($menu_links as $link)
+                    {{-- @foreach ($menu_links as $link)
                         <li><a href="{{route($link['route_name'])}}">{{$link['link']}}</a></li>
-                    @endforeach
+                    @endforeach --}}
               
                 </ul>
             </nav>
