@@ -11,13 +11,13 @@
             <div class="main-top-content">
                 @forelse ($comics as $comic)
                 <div class="col">
-                    <div class="card">
+                    <a href="{{route('comics.show', $comic->id)}}" class="card">
                         <figure class="comic-images">
                             <img src="{{$comic->thumb}} " alt="{{$comic->series}}">
                         </figure>
                         
                         <h3> {{$comic->series}} </h3>
-                    </div>
+                    </a>
                 </div>
                 @empty
 

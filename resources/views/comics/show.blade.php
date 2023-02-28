@@ -1,9 +1,9 @@
 @extends('layouts.main')
 
-@section('title', 'Comics')
+@section('title', $comic->series)
 
 @section('content')
 <div>
-    <h1>SiNGLE COMIC</h1>
+    <h1>{{$comic->series}}</h1>
 </div>
 @endsection
