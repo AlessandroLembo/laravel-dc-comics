@@ -19,5 +19,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // Route::resource('comics', ComicController::class); 
+
+// Rotta per visualizzare la lista dei dc comics
 Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
+
+// Rotta per avere la pagina del form
+Route::get('/comics/create', [ComicController::class, 'create'])->name('comics.create');
+
+// Rotta per visualizzare i dettagli del singolo dc comic
 Route::get('/comics/{id}', [ComicController::class, 'show'])->name('comics.show');
