@@ -1,0 +1,89 @@
+#form{
+    min-height: 400px;
+    background-color: whitesmoke;
+    position: relative;
+    padding-bottom: 4rem;
+
+    .create-comic{
+        @include vertical_algnm;
+        justify-content: space-around;
+        padding: 3rem 0;
+        margin-bottom: 5rem;
+
+        h1{
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        #back{
+            background-color: $primary;
+            color: white;
+            width: 180px;
+            padding: 10px 5px;
+            cursor: $pointer;
+            text-align: center;
+        }
+    }
+}
+
+#form-create-comic{
+    label{
+        display: block;
+        color: black;
+        font-size: 25px;
+    }
+
+
+    .row-text, .row-area{
+      @include vertical_algnm;
+      justify-content: space-between;
+      margin: 4rem 0;
+    }
+    
+    .row-text{
+       height: 50px;
+    }  
+
+    .row-area{
+      height: 250px;
+    }
+
+    #title, #series{
+     height: 40px;
+     width: 250px;
+    }
+    
+    #thumb{
+     height: 40px;
+     width: 500px;
+    }
+ 
+    #price,
+    #sale_date,
+    #type{
+        height: 40px;
+        width: 180px;
+    }
+ 
+    #artists, #writers{
+     height: 250px;
+     width: 600px;
+    }
+}
+
+.description-col{
+    margin: 0 auto;
+
+    label{
+        display: block;
+        color: black;
+        font-size: 25px;
+    }
+
+    #description{
+        height: 250px;
+        width: 1000px;
+       }
+   
+}
+
