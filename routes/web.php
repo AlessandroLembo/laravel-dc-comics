@@ -26,5 +26,8 @@ Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
 // Rotta per avere la pagina del form
 Route::get('/comics/create', [ComicController::class, 'create'])->name('comics.create');
 
+// Rotta per salvare i dati sul Database
+Route::post('/comics', [ComicController::class, 'store'])->name('comics.store');
+
 // Rotta per visualizzare i dettagli del singolo dc comic
 Route::get('/comics/{id}', [ComicController::class, 'show'])->name('comics.show');

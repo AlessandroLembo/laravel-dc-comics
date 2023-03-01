@@ -12,7 +12,7 @@
         </div>
         
     
-        <form action="" id="form-create-comic">
+        <form action="{{route('comics.store')}}" method="POST" id="form-create-comic">
             <div class="row-text">
                 <div class="col-form">
                     <label for="title">Title</label>
@@ -68,6 +68,10 @@
                     <label for="writers">Writers</label>
                     <textarea id="writers" name="writers"></textarea>
                 </div>
+            </div>
+
+            <div class="row-text btn-form">
+                    <button type="submit" id="btn-create">CREA</button>
             </div>
         </form>
     
