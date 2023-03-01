@@ -26,7 +26,7 @@
                        <span>AVAILABLE</span>
                    </div>
                 </div>
-                <p>{{$comic->description}}</p>
+                <p>{!! $comic->description !!}</p>
             </div>
 
             <div class="single-dc-image">
