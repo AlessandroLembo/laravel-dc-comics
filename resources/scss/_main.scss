@@ -139,14 +139,27 @@
 .art, .written{
     @include vertical_algnm;
     justify-content: space-between;
-    height: 90px;
+    height: 120px;
     border-top: 1px solid rgba(0, 0, 0, 0.6);
     
-    span, div{
-        font-size: 20px;
-        padding-right: 3rem;
+    span, ul{
+        font-size: 18px;
     };
+    
+    ul{
+        flex-basis: 80%;
+    }
 
+    span{
+        flex-basis: 20%;
+    }
+
+}
+
+.list-artists, .list-writers{
+    @include vertical_algnm;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .written{
@@ -156,11 +169,11 @@
 .series, .price, .sale-date{
     @include vertical_algnm;
     justify-content: space-between;
-    height: 60px;
+    height: 80px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.6);
 
     span, div{
-        font-size: 20px;
+        font-size: 18px;
         padding-right: 3rem;
     };
 }

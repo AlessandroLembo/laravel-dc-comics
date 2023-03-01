@@ -1,3 +1,20 @@
+<?php
+$writers = [];
+$writersLength = count($comic->writers);
+for ($i = 0; $i < $writersLength; $i++) 
+ 
+$writers[] = $comic->writers[$i];
+
+
+$artists = [];
+$artistsLength = count($comic->artists);
+for ($i = 0; $i < $artistsLength; $i++) 
+ 
+$artists[] = $comic->artists[$i];
+
+
+?>
+
 @extends('layouts.main')
 
 @section('title', $comic->series)
@@ -45,12 +62,23 @@
               <div class="specifications">
                   <h3>TALENT</h3>
                   <div class="art">
-                    <span>Art by:</span>
-                    <div>{{$comic->artists[0]}}</div>
+                   <span>Art by:</span>
+                   <ul class="list-artists">
+                      @foreach ($artists as $artist)     
+                        <li>{{ $artist === last($artists) ? $artist . '.' : $artist . ','}}</li>
+                     
+                      @endforeach
+                   </ul>
+                    
                   </div>
                   <div class="written">
                     <span>Written by:</span>
-                    <div>{{$comic->writers[0]}}</div>
+                    <ul class="list-writers">
+                        @foreach ($writers as $writer )
+                           <li>{{$writer === last($writers) ? $writer . '.' : $writer . ','}}</li>
+                        @endforeach
+                    </ul>
+                    
                   </div>
               </div>
 
