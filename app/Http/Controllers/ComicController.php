@@ -45,6 +45,8 @@ class ComicController extends Controller
         $new_comic->artists = $data['artists'];
         $new_comic->writers = $data['writers'];
 
+        // $new_comic->fill($data);
+
         // Salvo nel Database
         $new_comic->save();
     }

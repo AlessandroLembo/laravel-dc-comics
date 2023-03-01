@@ -8,7 +8,7 @@
     <div class="container">
         <div class="create-comic">
             <h1>Crea Comic</h1>
-            <a href="{{route('comics.index')}}" id="back">Indietro</button>
+            <a href="{{route('comics.index')}}" id="back">Indietro</a>
         </div>
         
     
