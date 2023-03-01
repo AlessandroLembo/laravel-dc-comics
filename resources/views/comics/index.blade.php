@@ -28,7 +28,14 @@
                 @endforelse
                 
             </div>
-        <button id="load">LOAD MORE</button>
+             
+            <div class="btn-comic">
+                <button id="load">LOAD MORE</button>
+                <a href="{{route('comics.create')}}" id="new-comic">CREA NEW COMIC</button>
+    
+            </div>
+            
+        </div> 
 
     </section>    
 @endsection

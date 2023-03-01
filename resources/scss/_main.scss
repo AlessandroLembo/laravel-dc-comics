@@ -211,14 +211,7 @@
 
         }
 
-        #load {
-            @include btn-style;
-            width: 180px;
-            padding: 10px 5px;
-            margin: 1rem auto;
-            display: block;
-        }
-    }
+}
 
 }
 
@@ -252,6 +245,28 @@
         color: darkred;
     }
 }
+
+
+.btn-comic{
+    @include vertical_algnm;
+    justify-content: space-around;
+    height: 50px;
+    margin: 1.5rem auto;
+    
+    #load, #new-comic{
+        background-color: $primary;
+        color: white;
+        width: 180px;
+        padding: 10px 5px;
+        cursor: $pointer;
+    }
+
+    #new-comic{
+        text-align: center;
+    }
+
+}
+
 
 // Main menu
 #links-main {
