@@ -37,7 +37,7 @@
 
                 <div class="col-form">
                     <label for="thumb">Thumb</label>
-                    <input type="url" id="thumb" placeholder="  Immagine del dc comic.." name="thumb" value="{{old('thumb')}}">
+                    <input type="url" id="thumb" placeholder="  Immagine del dc comic.." name="thumb" value="{{old('thumb', 'https://marcolanci.it/utils/placeholder.jpg')}}">
                 </div>
             </div>
             

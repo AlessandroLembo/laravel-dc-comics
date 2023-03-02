@@ -21,9 +21,11 @@
         </ul>
     </div>   
     @endif
-        <form action="{{route('comics.store')}}" method="POST" id="form-create-comic" novalidate>
+        <form action="{{route('comics.update', $comic->id)}}" method="POST" id="form-create-comic" novalidate>
             {{-- <input type="hidden" name="_token" value="{{get_csrf()}}"> --}}
             @csrf
+            @method('PUT')
+            
             <div class="row-text">
                 <div class="col-form">
                     <label for="title">Title</label>
@@ -37,7 +39,7 @@
 
                 <div class="col-form">
                     <label for="thumb">Thumb</label>
-                    <input type="url" id="thumb" placeholder="  Immagine del dc comic.." name="thumb" value="{{old('thumb', $comic->thumb)}}">
+                    <input type="url" id="thumb" placeholder="  Immagine del dc comic.." name="thumb" value="{{old('thumb', $comic->thumb ?? 'https://marcolanci.it/utils/placeholder.jpg')}}">
                 </div>
             </div>
             
