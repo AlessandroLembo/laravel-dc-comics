@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Comic;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 
 class ComicController extends Controller
 {
@@ -91,6 +92,17 @@ class ComicController extends Controller
     {
         // Prendo tutti campi del form
         $data = $request->all();
+
+        // Validazione
+        $request->validate([
+            'title' => ['required', 'string', Rule::unique('comics')->ignore($comic->id)],
+            'thumb' => 'nullable|url',
+            'price' => 'required|string',
+            'series' => 'required|string',
+            'sale_date' => 'required|string',
+            'type' => 'required|string',
+
+        ]);
 
         // Riempio i campi del form
         $comic->title = $comic['title'];
