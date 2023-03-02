@@ -20,8 +20,13 @@
     
     <div class="container">
         <div class="btn-show">
-            <a href="{{route('comics.edit', $comic->id)}}" class="btn-change">Modifica</a>
-            <a href="{{route('comics.index')}}" class="btn-back">Indietro</a>
+            <a href="{{route('comics.edit', $comic->id)}}" class="btn-change">MODIFICA</a>
+            <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="btn-delete">ELIMINA</button>
+            </form>
+            <a href="{{route('comics.index')}}" class="btn-back">INDIETRO</a>
         </div>
         
         <div class="single-dc-comic">

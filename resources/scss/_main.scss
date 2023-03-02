@@ -50,7 +50,7 @@
     justify-content: space-around;
     padding: 2rem 0;
 
-    .btn-back, .btn-change{
+    .btn-back, .btn-change, .btn-delete{
         height: 40px;
         width: 150px;
         border-radius: 10px;
@@ -65,6 +65,12 @@
 
     .btn-change{
         background-color: darkgoldenrod;
+    }
+
+    .btn-delete{
+        background-color: darkred;
+        border: none;
+        cursor: $pointer;
     }
 }
 
