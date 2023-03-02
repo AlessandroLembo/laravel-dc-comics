@@ -3,11 +3,11 @@
 @section('title', 'New DC Comic')
 
 @section('content')
-  
+
 <section id="form">
     <div class="container">
         <div class="create-comic">
-            <h1>Crea Comic</h1>
+            <h1>Crea DC Comic</h1>
             <a href="{{route('comics.index')}}" id="back">Indietro</a>
         </div>
         
