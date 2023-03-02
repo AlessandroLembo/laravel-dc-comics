@@ -11,7 +11,17 @@
             <a href="{{route('comics.index')}}" id="back">Indietro</a>
         </div>
         
-    
+    {{-- Se c'è almeno un error stampa il messaggio --}}
+    @if ($errors->any())
+    <div class="error-message">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{$error}}</li>
+            @endforeach
+        </ul>
+    </div>
+        
+    @endif
         <form action="{{route('comics.store')}}" method="POST" id="form-create-comic" novalidate>
             {{-- <input type="hidden" name="_token" value="{{get_csrf()}}"> --}}
             @csrf

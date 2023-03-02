@@ -1,3 +1,17 @@
+.error-message{
+    @include vertical_algnm;
+    min-height: 80px;
+    background-color: rgba(255, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 1rem 0;
+
+    li{
+        color: darkred;
+        font-size: 20px;
+        padding: 0.5rem 2rem;
+    }
+}
+
 #form{
     min-height: 400px;
     background-color: whitesmoke;
