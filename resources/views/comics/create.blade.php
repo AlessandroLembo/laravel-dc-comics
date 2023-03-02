@@ -19,8 +19,7 @@
                 <li>{{$error}}</li>
             @endforeach
         </ul>
-    </div>
-        
+    </div>   
     @endif
         <form action="{{route('comics.store')}}" method="POST" id="form-create-comic" novalidate>
             {{-- <input type="hidden" name="_token" value="{{get_csrf()}}"> --}}

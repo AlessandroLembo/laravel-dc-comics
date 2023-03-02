@@ -15,8 +15,15 @@
     </div>
     
 </section>
+
 <section id="comic-selected">
+    
     <div class="container">
+        <div class="btn-show">
+            <a href="{{route('comics.edit', $comic->id)}}" class="btn-change">Modifica</a>
+            <a href="{{route('comics.index')}}" class="btn-back">Indietro</a>
+        </div>
+        
         <div class="single-dc-comic">
             <div class="comic-description">
                 <h1>{{$comic->title}}</h1>
@@ -78,10 +85,7 @@
               </div>
           </div>
 
-          <div class="icon-dc">
-
-          </div>
-      </div>
+        </div>
 </section>
 
 @endsection

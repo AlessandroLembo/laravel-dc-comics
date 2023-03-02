@@ -41,8 +41,31 @@
 
 // page: section comic-selected
 #comic-selected{
-    height: 400px;
+    min-height: 400px;
     background-color: white;
+}
+
+.btn-show{
+    @include vertical_algnm;
+    justify-content: space-around;
+    padding: 2rem 0;
+
+    .btn-back, .btn-change{
+        height: 40px;
+        width: 150px;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        padding: 10px 15px;
+    }
+
+    .btn-back{
+        background-color: $primary;
+    }
+
+    .btn-change{
+        background-color: darkgoldenrod;
+    }
 }
 
 .single-dc-comic{

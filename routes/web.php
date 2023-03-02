@@ -29,5 +29,8 @@ Route::get('/comics/create', [ComicController::class, 'create'])->name('comics.c
 // Rotta per salvare i dati sul Database
 Route::post('/comics', [ComicController::class, 'store'])->name('comics.store');
 
+// Rotta per modificare i dati di un DC comic
+Route::get('/comics/{comic}/edit', [ComicController::class, 'edit'])->name('comics.edit');
+
 // Rotta per visualizzare i dettagli del singolo dc comic
-Route::get('/comics/{id}', [ComicController::class, 'show'])->name('comics.show');
+Route::get('/comics/{comic}', [ComicController::class, 'show'])->name('comics.show');
