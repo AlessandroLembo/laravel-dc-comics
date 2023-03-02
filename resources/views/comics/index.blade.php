@@ -28,6 +28,12 @@
                 @endforelse
                 
             </div>
+
+            @if (session('delete'))
+            <div class="dc-deleted">
+                <p>{{session('delete')}}</p>
+            </div>
+            @endif
              
             <div class="btn-comic">
                 <button id="load">LOAD MORE</button>
