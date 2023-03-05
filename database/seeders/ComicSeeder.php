@@ -30,7 +30,7 @@ class ComicSeeder extends Seeder
             $new_comic->artists = implode(",", $comic['artists']);
             $new_comic->writers = implode(",", $comic['writers']);
 
-            // Posso usare il metodo fill() perchè le proprietà le ho nominate come le chiavi dell'array associativo
+            // Potrei usare anche il metodo fill() perchè le proprietà le ho nominate come le chiavi dell'array associativo
             // $new_comic->fill($comic);
             $new_comic->save();
         }

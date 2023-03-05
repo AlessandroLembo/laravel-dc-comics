@@ -1,7 +1,3 @@
-@php
-    $menu_links = config('menu');
-@endphp
-
 <header>
     <div class="top-header">
        <div class="container">
@@ -20,6 +16,9 @@
                   </li>
                   <li>
                     <a class="@if(Route::is('comics.index')) active @endif" href="{{route('comics.index')}}">Comics</a>
+                  </li>
+                  <li>
+                    <a class="@if(Route::is('comics.create')) active @endif" href="{{route('comics.create')}}">Add DC Comic</a>
                   </li>
                 </ul>
             </nav>

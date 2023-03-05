@@ -13,7 +13,7 @@ class ComicController extends Controller
      */
     public function index()
     {
-        $comics = Comic::orderBy('series')->get();
+        $comics = Comic::orderBy('id')->get();
         return view('comics.index', compact('comics'));
     }
 
@@ -41,7 +41,7 @@ class ComicController extends Controller
 
         ]);
 
-        // prendo i dati che l raccolgo in array $data
+        // prendo i dati e li raccolgo in array $data
         $data = $request->all();
 
 

@@ -32,7 +32,7 @@ Route::post('/comics', [ComicController::class, 'store'])->name('comics.store');
 // Rotta per modificare i dati di un DC comic
 Route::get('/comics/{comic}/edit', [ComicController::class, 'edit'])->name('comics.edit');
 
-// Rotta per l'update di un DC comic
+// Rotta che porta alla pgina di dettaglio del DC comic appena modificato 
 Route::put('/comics/{comic}', [ComicController::class, 'update'])->name('comics.update');
 
 // Rotta per elminare un DC comic
